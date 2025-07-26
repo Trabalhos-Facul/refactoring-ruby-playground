@@ -1,0 +1,1 @@
+O calculo de ammount parece pertencer a uma regra interna de rental
