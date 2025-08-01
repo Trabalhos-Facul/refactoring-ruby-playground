@@ -1,6 +1,9 @@
-require_relative '../before/movie'
-require_relative '../before/custumer'
-require_relative '../before/rental'
+# require_relative '../before/movie'
+# require_relative '../before/custumer'
+# require_relative '../before/rental'
+require_relative '../after/movie'
+require_relative '../after/custumer'
+require_relative '../after/rental'
 
 RSpec.describe Customer do
   describe '#statement' do
