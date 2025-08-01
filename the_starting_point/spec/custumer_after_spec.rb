@@ -1,11 +1,12 @@
-require_relative '../before/movie'
-require_relative '../before/custumer'
-require_relative '../before/rental'
+require_relative '../after/movie'
+require_relative '../after/custumer'
+require_relative '../after/rental'
+require_relative '../after/regular_price'
 
 RSpec.describe Customer do
   describe '#statement' do
     john = Customer.new(:john)
-    cool_movie = Movie.new('Cool movie', 0)
+    cool_movie = Movie.new('Cool movie', RegularPrice.new)
     rental = Rental.new(cool_movie, 2)
     john.add_rental rental
 
